@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franquicias | PokeParadise</title>
+  <meta name="description" content="Abrí tu propia tienda PokeParadise.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <p><i class="fa-solid fa-truck-fast" style="color:var(--gold);margin-right:.4rem;"></i> Envíos a todo el país · Retirá en tienda sin cargo</p>
+      <div class="top-bar-links">
+        <a href="trabaja-en-tdc.html"><i class="fa-solid fa-briefcase"></i> Trabajá con nosotros</a>
+        <a href="franquicias.html"><i class="fa-solid fa-store"></i> Franquicias</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-gem" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 3L35 13V27L20 37L5 27V13L20 3Z" stroke="#D4AF37" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M20 3V37M5 13L35 27M35 13L5 27" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.45"/>
+        </svg>
+        Poke<span>Paradise</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Colección</a></li>
+          <li><a href="tutoriales.html">Tutoriales</a></li>
+          <li><a href="menu-tienda.html">Catálogo</a></li>
+          <li><a href="pokedex.html">Pokédex</a></li>
+          <li><a href="franquicias.html" class="active">Franquicias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="icon-btn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <div class="cart-wrap">
+          <button type="button" class="icon-btn cart-toggle" aria-label="Carrito"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></button>
+          <div class="cart-dropdown" id="cartDropdown">
+            <div class="cart-dropdown-head">
+              <h4>Tu carrito</h4>
+              <button type="button" class="cart-close" id="cartClose" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-empty" id="cartEmpty">Tu carrito está vacío.</div>
+            <div class="cart-dropdown-foot">
+              <div class="cart-total-row"><span>Total</span><span id="cartTotal">$0</span></div>
+              <button type="button" class="btn btn-gold cart-clear" id="cartClear">Vaciar carrito</button>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-outline">Mi Cuenta</a>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+  <section class="page-banner">
+    <div class="container">
+            <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:.65rem;"></i>
+        <span>Franquicias</span>
+      </div>
+      <h1>Abrí tu propia tienda PokeParadise</h1>
+      <p>Formá parte de nuestra red de tiendas especializadas en Pokémon TCG.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="form-layout">
+        <div class="form-aside">
+          <span>Por qué sumarte</span>
+          <h2>Beneficios de ser franquiciado</h2>
+          <p>Te acompañamos en cada etapa, desde la apertura hasta la operación diaria de tu tienda especializada.</p>
+          <ul class="benefit-list">
+            <li><i class="fa-solid fa-check"></i> Marca consolidada y reconocida por la comunidad</li>
+            <li><i class="fa-solid fa-check"></i> Capacitación completa para vos y tu equipo</li>
+            <li><i class="fa-solid fa-check"></i> Soporte comercial y operativo permanente</li>
+            <li><i class="fa-solid fa-check"></i> Acceso a catálogo exclusivo de productos</li>
+          </ul>
+          <img src="img/ba-mapa.png" alt="Franquicias PokeParadise — Buenos Aires" class="aside-img aside-img-map">
+                    <div class="info-row">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <span>franquicias@pokeparadise.com</span>
+          </div>
+        </div>
+        <div class="form-card">
+          <form>
+            <div class="form-grid">
+              <div class="f-field"><label for="nombre">Nombre</label><input type="text" id="nombre" placeholder="Tu nombre completo"></div>
+              <div class="f-field"><label for="ciudad">Ciudad</label><input type="text" id="ciudad" placeholder="Tu ciudad"></div>
+              <div class="f-field"><label for="provincia">Provincia</label><input type="text" id="provincia" placeholder="Tu provincia"></div>
+              <div class="f-field">
+                <label for="capital">Capital disponible</label>
+                <select id="capital"><option value="">Seleccioná un rango</option><option>Hasta $10.000.000</option><option>$10.000.000 – $25.000.000</option><option>Más de $25.000.000</option></select>
+              </div>
+              <div class="f-field full"><label for="expcom">Experiencia comercial</label><textarea id="expcom" placeholder="Contanos brevemente tu experiencia en comercios o emprendimientos"></textarea></div>
+            </div>
+            <button type="submit" class="btn btn-gold">Enviar solicitud</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <div class="newsletter-text">
+        <h3>Suscribite y recibí novedades exclusivas</h3>
+        <p>Enterate antes que nadie de nuevos sets, restocks y promos.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico">
+        <button type="submit" class="btn btn-gold">Suscribirme</button>
+      </form>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo">
+            <svg class="logo-gem" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 3L35 13V27L20 37L5 27V13L20 3Z" stroke="#D4AF37" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M20 3V37M5 13L35 27M35 13L5 27" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.45"/>
+        </svg>
+            Poke<span>Paradise</span>
+          </a>
+          <p>Tienda premium de cartas Pokémon TCG, productos sellados y accesorios para coleccionistas y jugadores.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Colección</a></li>
+            <li><a href="tutoriales.html">Tutoriales</a></li>
+            <li><a href="menu-tienda.html">Catálogo</a></li>
+            <li><a href="pokedex.html">Pokédex</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="trabaja-en-tdc.html">Trabajá con Nosotros</a></li>
+            <li><a href="franquicias.html">Franquicias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <div class="contact-item"><i class="fa-solid fa-envelope"></i> contacto@pokeparadise.com</div>
+          <div class="contact-item"><i class="fa-solid fa-phone"></i> +54 11 5555-5555</div>
+          <div class="contact-item"><i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PokeParadise. Todos los derechos reservados.</p>
+        <p>Diseñado con <i class="fa-solid fa-heart" style="color:var(--gold);"></i> para coleccionistas</p>
+      </div>
+    </div>
+  </footer>
+  <div id="ppToast" class="pp-toast"></div>
+  <script src="js/cart.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

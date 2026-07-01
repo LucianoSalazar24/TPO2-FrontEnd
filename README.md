@@ -23,6 +23,12 @@ Tecnicatura Superior en Desarrollo de Software - IFTS 16
 
 ---
 
+## 📸 Vista previa
+
+![Página principal de PokeParadise](screenshots/home.png)
+
+---
+
 ## Descripción del proyecto
 
 **PokeParadise** es un sitio web de comercio electrónico estático y dinámico desarrollado como trabajo práctico para la materia de Desarrollo Front End.
@@ -285,7 +291,7 @@ El proyecto no requiere instalación de dependencias ni servidor especial. Para 
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/LucianoSalazar24/TPO1-FrontEnd.git
+   git clone https://github.com/LucianoSalazar24/TPO2-FrontEnd.git
    ```
 
 2. Abrir el archivo `index.html` en cualquier navegador moderno, o utilizar la extensión **Live Server** de Visual Studio Code para desarrollo.
